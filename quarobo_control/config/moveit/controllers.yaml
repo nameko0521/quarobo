@@ -1,0 +1,34 @@
+controller_manager_ns: controller_manager
+controller_list:
+  - name: /quarobo/fr_trajectory_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - FRS_joint
+      - FRL_joint
+      - FRF_joint
+  - name: /quarobo/fl_trajectory_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - FLS_joint
+      - FLL_joint
+      - FLF_joint
+  - name: /quarobo/rr_trajectory_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - RRS_joint
+      - RRL_joint
+      - RRF_joint
+  - name: /quarobo/rl_trajectory_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - RLS_joint
+      - RLL_joint
+      - RLF_joint
