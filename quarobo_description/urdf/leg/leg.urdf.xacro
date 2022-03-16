@@ -24,7 +24,7 @@
             <visual>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://quarobo_description/meshes/origin_ros_quarobo_stlFiles/${mesh}"/>
+                    <mesh filename="package://quarobo_description/meshes/quarobo_stlFiles/${mesh}"/>
                 </geometry>
                 <material name="${color}"/>
             </visual>
@@ -56,7 +56,7 @@
             <visual>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://quarobo_description/meshes/origin_ros_quarobo_stlFiles/${mesh}"/>
+                    <mesh filename="package://quarobo_description/meshes/quarobo_stlFiles/${mesh}"/>
                 </geometry>
                 <material name="${color}"/>
             </visual>

@@ -4,8 +4,8 @@
     JOINT: 3
 */
 #include <iostream>
-#include "../include/leg_parameter.hpp"
-#include "../include/kinematics.hpp"
+#include "include/leg_parameter.hpp"
+#include "include/kinematics.hpp"
 
 using namespace std;
 

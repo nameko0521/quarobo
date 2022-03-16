@@ -154,8 +154,8 @@ include_directories(
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/quarobo_control.cpp
 # )
-add_library(kinematics include/kinematics.cpp)
-add_library(leg_parameter include/leg_parameter.cpp)
+#add_library(kinematics include/kinematics.cpp)
+#add_library(leg_parameter include/leg_parameter.cpp)
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -169,6 +169,7 @@ add_library(leg_parameter include/leg_parameter.cpp)
 #add_executable(moveit_commander src/moveit_commander.cpp)
 #add_executable(fr_ik_node src/fr_ik.cpp)
 add_executable(jointStates_processing src/jointStates_processing.cpp)
+add_executable(jointStates_publisher src/jointStates_publisher.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -188,8 +189,9 @@ add_executable(jointStates_processing src/jointStates_processing.cpp)
 #target_link_libraries(moveit_commander ${catkin_LIBRARIES})
 #target_link_libraries(fr_ik_node ${catkin_LIBRARIES})
 target_link_libraries(jointStates_processing ${catkin_LIBRARIES})
-target_link_libraries(kinematics ${catkin_LIBRARIES})
-target_link_libraries(leg_parameter ${catkin_LIBRARIES})
+target_link_libraries(jointStates_publisher ${catkin_LIBRARIES})
+#target_link_libraries(kinematics ${catkin_LIBRARIES})
+#target_link_libraries(leg_parameter ${catkin_LIBRARIES})
 
 #############
 ## Install ##
